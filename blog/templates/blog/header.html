@@ -28,6 +28,13 @@
      {% endif %}
   </title>
   {% clicky %}
+  <script type="text/javascript">
+  // set GA parameters before loading GA
+  var _gaq = _gaq || [];
+  // sadly, this seems to be the only way
+  // to make (legacy) ga.js not store any cookies
+  _gaq.push(['_setDomainName', 'example.invalid']);
+  </script>
   {% google_analytics %}
   </head>
   <body>

@@ -103,6 +103,8 @@ USE_TZ = True
 CLICKY_SITE_ID='00000000'
 GOOGLE_ANALYTICS_PROPERTY_ID='UA-000000-0'
 GOOGLE_ANALYTICS_SITE_SPEED=False
+GOOGLE_ANALYTICS_ANONYMIZE_IP=True
+# analytical doesn't let us disable cookies
 
 try:
     from .settings_production import *
